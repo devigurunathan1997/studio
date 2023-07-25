@@ -1,0 +1,114 @@
+<html>
+  {%load static%}
+<head>
+    <title>Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+    .card img {
+        width: 480px;
+        height: 250px;
+    }
+    .card-text {
+      text-align: justify;
+    }
+    @media only screen and (max-width: 768px) {
+      img {
+          width: 100%;
+          height: auto;
+      }
+      }
+</style>
+</head>
+<body id="service">
+  {% include 'navbar.html' %}
+  <section class="py-3 text-center container">
+    <div class="container">
+    <div class="card mb-4" style="max-width: 1200px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{% static 'weddd.jpg' %}" class="img-fluid rounded-start" alt="wedding">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Wedding Collections</h5>
+              <p class="card-text">we see your wedding day as a unique event to be captured in a style which suits you. We capture the memories of your day so that you can remember it in the very best way. 
+                From our own experience we know how quickly the day flies by, and how wonderful it is to have a beautiful, 
+                stylish record of your beautiful wedding day. We have a bespoke, relaxed and natural approach to capturing your wedding day memories. Our aim is to provide you stunning, creative images and films whilst recording the laughs, tears and moments as they happen.</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+     <div class="container">
+    <div class="card mb-4" style="max-width: 1200px;">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Studio Portraits</h5>
+              <p class="card-text">Choosing between getting your portraits taken inside a studio and outdoors can be a difficult decision. This is were we come in, we specialize in studio or natural lighting photography. We are available for infants, children, families, seniors, teens, pets, and sports portraits. We can even come out to your home and capture the moments at your location</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="{% static 'studio.jpg' %}" class="img-fluid rounded-start" alt="studio">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card mb-4" style="max-width: 1200px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="{% static 'industrial.jpg' %}" class="img-fluid rounded-start" alt="industry">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Industrial & Product Photography</h5>
+                <p class="card-text">When you work in an industry, nothing tells the story better of what you do than quality photos of your plant, product or equipment.
+                  The photographs we take for your business are perfect for all your marketing needs. Whether that’s advertising, brochures, catalogues, websites, or business marketing collateral. All images are of the highest quality and completely versatile, so you get maximum return on investment.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="container">
+        <div class="card mb-4" style="max-width: 1200px;">
+            <div class="row g-0">
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Newborn Portraits</h5>
+                  <p class="card-text">Savour those teeny tiny features of your lil beings for they will grow up in no time.It is so blissful to capture the details and special moments of the family when a new life joins the journey of life. The divine smiles and expressions in sleep are purely magical. The comfort and safety of the baby will be our utmost priority and the poses will be attained in the gentlest way possible.Ideal for newborn photography is 5-14 days as they will be in deep sleep and drift to the poses easily. We have a comfortable room to feed and soothe the baby. We strongly believe in simple,pure and minimalistic Newborn portraits which will mesmerize you.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="{% static 'newborn.jpg' %}" class="img-fluid rounded-start" alt="newborn">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card mb-4" style="max-width: 1200px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="{% static 'laminate.jpg' %}" class="img-fluid rounded-start" alt="lamination">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Lamination</h5>
+                    <p class="card-text">Lamination is the ideal method for adding years to the life of your memorable photos. PhotoGallery provided various lamination services. We laminate your photos from larger size to smaller size photo to smaller size photo. We are using a quality lamination machine and materials for photo lamination. We undertake bulk lamination services for your company or institutions.</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+  </section>
+  {% include 'footer.html' %} 
+</body>
+</html>
+
+
+
+

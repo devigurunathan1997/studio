@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+ <style>
+  p a {
+    text-decoration: none;
+  }
+  
+  h6 {
+    margin-top: 10px;
+  }
+  #copy{
+    font-size: 12px;
+  }
+  textarea {
+    resize: none;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.svg-inline--fa {
+  vertical-align: -0.200em;
+}
+
+.rounded-social-buttons {
+  text-align: center;
+  float:right;
+  display: flex;
+  margin-right: 0.5rem;
+  margin-bottom: 0.25rem;
+  margin-top: 0.50rem;
+
+}
+
+.rounded-social-buttons .social-button {
+  display: flex;
+  float: right;
+  position: relative;
+  cursor: pointer;
+  width: 2.725rem;
+  height: 2.725rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-bottom: 0.25rem;
+  margin-top: 0.50rem;
+  
+}
+p .fa-phone {
+  transform: rotateY(180deg);
+}
+
+.rounded-social-buttons .fa-phone{
+  font-size: 20px;
+  margin: 10px;
+
+} 
+
+.rounded-social-buttons .fa-whatsapp, .fa-instagram {
+  font-size: 30px;
+  margin: 0.40rem;
+ 
+}
+
+.rounded-social-buttons .social-button.phone {
+  background: #148ddc;
+  transform: rotateY(180deg);
+  
+}
+
+.rounded-social-buttons .social-button.phone:hover, .rounded-social-buttons .social-button.phone:focus {
+  color: #148ddc;
+  background: #fefefe;
+  border-color: #148ddc;
+}
+
+.rounded-social-buttons .social-button.whatsapp {
+  background: #22ff09;
+}
+
+.rounded-social-buttons .social-button.whatsapp:hover, .rounded-social-buttons .social-button.whatsapp:focus {
+  color: #22ff09;
+  background: #fefefe;
+  border-color: #22ff09;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: #ff0873;
+}
+
+.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+  color: #ff0873;
+  background: #fefefe;
+  border-color: #ff0873;
+}
+li {
+  list-style: none;
+}
+ </style>   
+</head>
+<body>
+<footer class="text-center text-lg-start text-dark bg-light">
+    <section class="footer">
+        <div class="container text-center text-md-start mt-3">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4"> PhotoGallery</h6>
+              <p>
+                we have been providing photography and videography services in and around coimbatore city. We’re a Team of best Photographers And Videographers. 
+                Feel free to contact us.
+              </p>
+              <div id="copy">Copyright © PhotoGallery, All Rights Reserved.</div>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <p><a href="{% url 'service' %}" class="text-reset">Services</a></p>
+              <p><a href="{% url 'gallery' %}" class="text-reset">Gallery</a></p>
+              <p><a href="{% url 'about' %}" class="text-reset">About Us</a></p>
+              <p><a href="{% url 'contactform' %}" class="text-reset">Contact</a></p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <h6 class="text-uppercase fw-bold mb-4"> Contact</h6>
+                <p><i class="fa fa-home"></i> PhotoGallery.in</p>
+                <p><i class="fa fa-envelope"></i> photogallery2022@gmail.com</p>
+                <p><i class="fa fa-phone"></i> + 91 1234567890</p>
+                <p><i class="ri-map-pin-2-fill"></i>352, Thiruvenkatam Nagar, Telungupalayam, Coimbatore-39</p>
+                  <p><div class="p-2  text-dark fixed-bottom">
+                  <div class="rounded-social-buttons">
+                    <ul>
+                  <li><a class="social-button phone" href="tel:+916381696560"><i class="fa fa-phone"></i></a></li>
+                  <li><a class="social-button whatsapp" href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                  <li><a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+          </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </body>
+    </html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+    <head>
+        <title>About Us</title>
+        <style>
+            #aboutus {
+                text-align: justify;
+                margin: 10px;
+            }
+            
+
+            @media only screen and (max-width: 768px) {
+            .col {
+                width: 100%;
+            }
+            }
+        </style>
+    </head>
+    <body id="about">
+        {% include 'navbar.html' %}
+        <section class="py-3 text-center container">
+            <div class="row g-0">
+                <div class="col-md-4">
+                <img src="{% static 'bb.jpg' %}" class="img-fluid rounded-start" alt="wedding">   
+                </div>
+                <div class="col-md-8">
+                <div id="aboutus">
+                <h4>Capturing Emotions that Last Forever</h4>
+                <p> PhotoGallery captures the best moments of your life and presents you umpteen opportunities to gift personalized products to your loved ones. Established in 2022 as a photo studio, PhotoGallery today stands as a one stop solution for photography and gifting. More than a passion, it is a part of everyone’s life to record happening moments and to knit fables for generations. PhotoGallery does the same flawlessly for you. To make your special days and events more meaningful, our unique services and gift products can be customized and designed for birthdays, anniversaries, weddings, engagements, house warming celebrations, corporate celebrations, school and college events and all other occasions.</p>    
+                <h4>Team</h4>
+                <p>A semi-professional culture with motivating team spirit unites beginners and experts of the field. Departments work together towards growth of the company. Our effective and efficient team work comprises of expert photography team, digital artists, framers and not forgetting customer friendly customer care and support executives thus playing a vital role in high quality products delivered in short time.</p>
+                <p>The vast experience has helped us become excellent wedding photographers in Coimbatore. When people think about Professional Wedding Photography in Coimbatore, certainly PhotoGallery comes to their mind.</p>
+                </div>
+            </div>
+            </div>   
+        </section>
+        {% include 'footer.html' %}
+    </body>
+    </html>
